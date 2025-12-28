@@ -162,17 +162,21 @@ class SmartCamera(SmartDevice):
     The core properties of a smart thermostat. Based on SmartDevice.
 
     :param battery_level: the level of the battery, values in [0,100]
+    :param motion_detected
+
 
     :return:
 
     """
-    def __init__(self, device_id, name, location, battery_level):
+    def __init__(self, device_id, name, location, battery_level, motion_detected=False, last_snapshot=None):
         print("SmartCamera constructor called \n")
         super().__init__(device_id,name,location)
         self.device_type = "CAMERA"
-        self.motion_detected = False
         self._battery_level = battery_level
-        self.last_snapshot = time.time
+        if last_snapshot is None:
+            self.last_snapshot = time.time()
+        else: self.last_snapshot=last_snapshot
+        self.motion_detected = motion_detected
 
 
     @property
