@@ -101,7 +101,7 @@ async def main():
 
     # Create tasks
     tasks = [asyncio.create_task(device_task(dev)) for dev in devices]
-    print("Connecting devices...")
+    print("\nConnecting devices\n")
 
     # Keep the loop running
     await asyncio.gather(*tasks)
@@ -110,4 +110,9 @@ async def main():
 if __name__ == "__main__":
     writer_thread = threading.Thread(target=file_writer_worker, daemon=True)
     writer_thread.start()
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        # exit
+        print("\nSystem shutting down safely\n")
+        print("All logs saved to history.log. Goodbye!")

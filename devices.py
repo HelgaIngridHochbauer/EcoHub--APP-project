@@ -133,7 +133,7 @@ class SmartThermostat(SmartDevice):
         if 15 <= value <= 30:
             self._target_temp = value
         else:
-            print(f"Target temperature {value} is out of safe range.\n")
+            print(f"{self.name}: Target temperature {value} is out of safe range.\n")
 
     def send_update(self):
         return {
@@ -152,10 +152,10 @@ class SmartThermostat(SmartDevice):
         """ Handles thermostat commands like cooling down/warming up  """
         if command == "TRIGGER_COOLING":
             self.current_temp -= 1.0
-            print("Smart Thermostat command executed: Cooling Down (-1) \n")
+            print(f"{self.name}: command executed: Cooling Down (-1) \n")
         elif command == "TRIGGER_HEATING":
             self.current_temp += 1.0
-            print("Smart Thermostat command executed: Warming Up! (-1) \n")
+            print(f"{self.name}: command executed: Warming Up! (-1) \n")
 
 class SmartCamera(SmartDevice):
     """
