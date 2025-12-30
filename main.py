@@ -4,6 +4,7 @@ import json
 import asyncio
 import random
 from devices import SmartBulb, SmartThermostat, SmartCamera
+import time
 
 
 data_queue = queue.Queue()
@@ -21,6 +22,7 @@ def file_writer_worker():
         # Save to disk
         with open("history.log", "a") as f:
             f.write(serialized_data + "\n")
+            f.flush()
         # Mark task as done
         data_queue.task_done()
 
@@ -56,7 +58,7 @@ async def main():
     ]
 
     # Create tasks
-    tasks = [asyncio.create_task(device_task(d)) for d in devices]
+    tasks = [asyncio.create_task(device_task(dev)) for dev in devices]
     print("Connecting devices...")
 
     # Keep the loop running
@@ -64,6 +66,8 @@ async def main():
 
 
 if __name__ == "__main__":
+    writer_thread = threading.Thread(target=file_writer_worker, daemon=True)
+    writer_thread.start()
     asyncio.run(main())
 
     #to do: 1. Check the ascio logic, start phase 2, open main.py and start Phase 2 by setting up the Threaded Storage Worker to handle writing to history.log
