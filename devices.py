@@ -151,10 +151,10 @@ class SmartThermostat(SmartDevice):
     def execute_command(self, command):
         """ Handles thermostat commands like cooling down/warming up  """
         if command == "TRIGGER_COOLING":
-            self.target_temp -= 1.0
+            self.current_temp -= 1.0
             print("Smart Thermostat command executed: Cooling Down (-1) \n")
         elif command == "TRIGGER_HEATING":
-            self.target_temp += 1.0
+            self.current_temp += 1.0
             print("Smart Thermostat command executed: Warming Up! (-1) \n")
 
 class SmartCamera(SmartDevice):

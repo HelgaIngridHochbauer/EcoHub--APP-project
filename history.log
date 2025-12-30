@@ -153,3 +153,219 @@
 {"device_id": "bulb_01", "type": "BULB", "timestamp": 1767117519.3591096, "payload": {"is_on": false, "brightness": 80}}
 {"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767117519.5911546, "payload": {"current_temp": 23, "target_temp": 22, "humidity": 40.0}}
 {"device_id": "bulb_04", "type": "BULB", "timestamp": 1767117519.6216815, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767118830.2538505, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767118830.4554977, "payload": {"current_temp": 21.511185536050036, "target_temp": 23.0, "humidity": 60.2}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118830.91471, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767118831.3769472, "payload": {"battery_level": 100, "motion_detected": false, "last_snapshot": 1767118828.4430535}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767118832.3885546, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767118832.3885546, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767118828.4430535}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767118832.3885546, "payload": {"battery_level": 100, "motion_detected": false, "last_snapshot": 1767118828.4430535}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118832.4111106, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118833.1913846, "payload": {"current_temp": 23.106022811996827, "target_temp": 21.0, "humidity": 40.0}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118834.2741568, "payload": {"current_temp": 20.51579762275215, "target_temp": 25.0, "humidity": 35.2}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767118834.2741568, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767118834.3849201, "payload": {"current_temp": 20.301434575152875, "target_temp": 24.0, "humidity": 60.2}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767118835.4258738, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767118828.4430535}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767118835.6169512, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118836.3548121, "payload": {"current_temp": 22.085738141771632, "target_temp": 20.0, "humidity": 40.0}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767118836.3847451, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118836.5099146, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767118836.5099146, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767118828.4430535}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767118836.5415418, "payload": {"is_on": false, "brightness": 0}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118837.071754, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767118837.2383363, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118837.6080472, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118838.9339457, "payload": {"current_temp": 21.651508267642434, "target_temp": 26.0, "humidity": 35.2}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767118839.0749066, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767118839.873283, "payload": {"battery_level": 100, "motion_detected": true, "last_snapshot": 1767118839.873283}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118840.0292745, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767118840.0759268, "payload": {"current_temp": 21.47318711974669, "target_temp": 25.0, "humidity": 60.2}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767118841.4548962, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767118841.92549, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767118828.4430535}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118841.9562194, "payload": {"current_temp": 20.532969529426467, "target_temp": 27.0, "humidity": 35.2}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118843.0592227, "payload": {"current_temp": 23.091160318456318, "target_temp": 19.0, "humidity": 40.0}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767118843.5774634, "payload": {"battery_level": 78, "motion_detected": true, "last_snapshot": 1767118843.5774634}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767118844.0844643, "payload": {"is_on": false, "brightness": 0}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767118844.1626248, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118844.6943254, "payload": {"current_temp": 22.997901342052096, "target_temp": 18.0, "humidity": 40.0}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118844.7567813, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767118845.2445576, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767118845.6376233, "payload": {"current_temp": 21.390437569657266, "target_temp": 26.0, "humidity": 60.2}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767118846.211464, "payload": {"is_on": false, "brightness": 0}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118846.211464, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767118846.7619433, "payload": {"battery_level": 99, "motion_detected": true, "last_snapshot": 1767118846.7619433}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118847.2160919, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767118847.3594837, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767118843.5774634}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118847.7409608, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118848.3551304, "payload": {"current_temp": 19.780337573809764, "target_temp": 28.0, "humidity": 35.2}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767118848.4030914, "payload": {"battery_level": 100, "motion_detected": false, "last_snapshot": 1767118839.873283}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118849.0834188, "payload": {"current_temp": 23.502218354374474, "target_temp": 17.0, "humidity": 40.0}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767118849.8880665, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767118850.373026, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118851.3706915, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767118851.6258926, "payload": {"battery_level": 100, "motion_detected": false, "last_snapshot": 1767118839.873283}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118851.9093392, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767118851.9411855, "payload": {"current_temp": 21.33529460177062, "target_temp": 27.0, "humidity": 60.2}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767118852.0050619, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767118846.7619433}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767118852.05233, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767118852.506164, "payload": {"is_on": false, "brightness": 0}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767118854.7709572, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118855.230155, "payload": {"current_temp": 19.873452053055416, "target_temp": 29.0, "humidity": 35.2}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118856.0094917, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767118856.0404253, "payload": {"battery_level": 78, "motion_detected": true, "last_snapshot": 1767118856.0404253}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767118856.1654367, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767118857.1471126, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118857.290542, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767118857.4941375, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767118846.7619433}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118857.73148, "payload": {"current_temp": 24.242070533611653, "target_temp": 16.0, "humidity": 40.0}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767118858.5899515, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767118858.7463398, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118858.9337637, "payload": {"current_temp": 25.592566535961726, "target_temp": 15.0, "humidity": 40.0}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767118859.7286901, "payload": {"battery_level": 100, "motion_detected": false, "last_snapshot": 1767118839.873283}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118859.8384156, "payload": {"current_temp": 18.396790805030477, "target_temp": 30.0, "humidity": 35.2}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767118860.1991575, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767118860.326726, "payload": {"is_on": false, "brightness": 0}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767118860.444705, "payload": {"current_temp": 19.425985281522266, "target_temp": 28.0, "humidity": 60.2}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767118860.5692973, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118861.028054, "payload": {"current_temp": 20.27416074334122, "target_temp": 30.0, "humidity": 35.2}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118861.1851795, "payload": {"current_temp": 26.960337052188628, "target_temp": 15.0, "humidity": 40.0}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767118861.2627141, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767118861.4354558, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767118846.7619433}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118861.7664814, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767118862.1153998, "payload": {"is_on": false, "brightness": 0}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767118862.287231, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767118856.0404253}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767118863.1966152, "payload": {"battery_level": 100, "motion_detected": false, "last_snapshot": 1767118839.873283}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118863.39944, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118864.006159, "payload": {"current_temp": 28.586752961278407, "target_temp": 15.0, "humidity": 40.0}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118864.0375817, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767118865.1903505, "payload": {"battery_level": 100, "motion_detected": true, "last_snapshot": 1767118865.1903505}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767118866.0441685, "payload": {"battery_level": 78, "motion_detected": true, "last_snapshot": 1767118866.0441685}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767118866.354008, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118866.425699, "payload": {"current_temp": 18.5925226759508, "target_temp": 30.0, "humidity": 35.2}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118866.4725645, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767118866.9862814, "payload": {"current_temp": 21.391453565096736, "target_temp": 29.0, "humidity": 60.2}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767118867.891988, "payload": {"battery_level": 100, "motion_detected": false, "last_snapshot": 1767118865.1903505}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118868.2309241, "payload": {"current_temp": 20.19745010174582, "target_temp": 30.0, "humidity": 35.2}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118868.6087916, "payload": {"current_temp": 29.86804714812223, "target_temp": 15.0, "humidity": 40.0}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767118869.0770686, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767118866.0441685}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767118869.1716924, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118869.219467, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767118869.9837332, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767118846.7619433}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767118870.2483315, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767118870.3094258, "payload": {"is_on": false, "brightness": 0}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118871.565811, "payload": {"current_temp": 28.11858222377172, "target_temp": 15.0, "humidity": 40.0}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118871.9453797, "payload": {"current_temp": 19.646868393326063, "target_temp": 30.0, "humidity": 35.2}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767118871.9453797, "payload": {"current_temp": 20.456133289452342, "target_temp": 30.0, "humidity": 60.2}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767118872.6494083, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767118872.8062513, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767118866.0441685}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118872.997461, "payload": {"current_temp": 21.062158963095474, "target_temp": 30.0, "humidity": 35.2}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118873.1242192, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767118873.1242192, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767118846.7619433}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767118873.2329488, "payload": {"is_on": false, "brightness": 0}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767118873.921448, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118875.2285235, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767118876.1990223, "payload": {"battery_level": 100, "motion_detected": false, "last_snapshot": 1767118865.1903505}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118876.2293272, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118876.3559172, "payload": {"current_temp": 28.55020100792306, "target_temp": 15.0, "humidity": 40.0}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767118876.68224, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118877.305655, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767118878.1745644, "payload": {"current_temp": 28.77663868914601, "target_temp": 15.0, "humidity": 40.0}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767118878.2203064, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767118878.6330712, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118878.7128963, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118879.1951077, "payload": {"current_temp": 20.813296204060844, "target_temp": 30.0, "humidity": 35.2}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767118879.4980614, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767118846.7619433}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767118880.4568129, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767118866.0441685}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118880.5642977, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767118880.67572, "payload": {"current_temp": 22.25639585039393, "target_temp": 30.0, "humidity": 60.2}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767118881.1914778, "payload": {"is_on": false, "brightness": 0}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118881.4079313, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118881.7244847, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767118882.2995055, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118882.515924, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767118883.246058, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767118866.0441685}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767118883.9082732, "payload": {"battery_level": 99, "motion_detected": true, "last_snapshot": 1767118883.9082732}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767118884.0826874, "payload": {"is_on": false, "brightness": 0}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767118884.1145554, "payload": {"battery_level": 100, "motion_detected": false, "last_snapshot": 1767118865.1903505}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767118884.3827305, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767118884.775042, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767118885.1590092, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767118886.3792298, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767118886.4407077, "payload": {"current_temp": 22.417983501676495, "target_temp": 30.0, "humidity": 35.2}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767118886.4718766, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767119340.3008144, "payload": {"battery_level": 78, "motion_detected": true, "last_snapshot": 1767119340.3008144}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767119340.6587203, "payload": {"current_temp": 20.671667897827472, "target_temp": 24, "humidity": 35.2}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767119341.1742628, "payload": {"is_on": false, "brightness": 0}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767119342.052308, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767119342.08081, "payload": {"battery_level": 100, "motion_detected": true, "last_snapshot": 1767119342.08081}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767119342.7579818, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767119340.3008144}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767119343.6058447, "payload": {"current_temp": 20.66355608538243, "target_temp": 22, "humidity": 60.2}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767119343.8393555, "payload": {"current_temp": 21.463731311629136, "target_temp": 22, "humidity": 40.0}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767119344.775295, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767119345.1508374, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767119337.7110054}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767119345.4936347, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767119345.9049118, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767119346.1659026, "payload": {"current_temp": 22.180310696385636, "target_temp": 24, "humidity": 35.2}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767119346.288744, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767119346.5392773, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767119337.7110054}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767119346.5392773, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767119347.4809487, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767119340.3008144}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767119348.2681408, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767119348.4731176, "payload": {"current_temp": 21.483478449893493, "target_temp": 22, "humidity": 40.0}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767119348.6448107, "payload": {"battery_level": 100, "motion_detected": true, "last_snapshot": 1767119348.6448107}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767119348.977304, "payload": {"current_temp": 22.555630862213153, "target_temp": 22, "humidity": 60.2}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767119349.0102942, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767119349.1686242, "payload": {"current_temp": 24.09939941418354, "target_temp": 24, "humidity": 35.2}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767119349.5257723, "payload": {"is_on": false, "brightness": 0}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767119350.298327, "payload": {"current_temp": 21.082456221271148, "target_temp": 22, "humidity": 40.0}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767119350.6422384, "payload": {"is_on": true, "brightness": 80}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767119350.8147693, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767119351.2951996, "payload": {"current_temp": 23.422474019431494, "target_temp": 24, "humidity": 35.2}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767119352.0462682, "payload": {"current_temp": 21.548300598504213, "target_temp": 22, "humidity": 40.0}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767119352.1899378, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767119352.1899378, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767119353.5668511, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767119353.852232, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767119337.7110054}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767119354.085884, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767119355.1805463, "payload": {"battery_level": 100, "motion_detected": false, "last_snapshot": 1767119348.6448107}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767119355.242956, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767119355.3880432, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767119355.7997456, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767119340.3008144}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767119356.2111533, "payload": {"current_temp": 22.90052244133375, "target_temp": 22, "humidity": 60.2}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767119356.2111533, "payload": {"is_on": true, "brightness": 0}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767119356.4433725, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767119356.7552037, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767119356.8656774, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767119356.9137628, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767119340.3008144}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767119357.381629, "payload": {"current_temp": 21.76433967942722, "target_temp": 22, "humidity": 40.0}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767119357.4267082, "payload": {"is_on": true, "brightness": 80}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767119357.8673315, "payload": {"current_temp": 24.361393200195437, "target_temp": 24, "humidity": 35.2}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767119357.8673315, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767119359.0069258, "payload": {"battery_level": 100, "motion_detected": true, "last_snapshot": 1767119359.0069258}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767119359.1023896, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767119340.3008144}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767119359.6711767, "payload": {"is_on": true, "brightness": 80}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767119359.7166898, "payload": {"current_temp": 24.233897803101897, "target_temp": 24, "humidity": 35.2}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767119360.8402, "payload": {"current_temp": 22.05380148312901, "target_temp": 22, "humidity": 40.0}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767119360.9202442, "payload": {"is_on": true, "brightness": 0}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767119360.9202442, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767119337.7110054}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767119361.5108404, "payload": {"current_temp": 21.968712431024553, "target_temp": 22, "humidity": 60.2}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767119361.7127826, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767119362.215707, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767119362.510898, "payload": {"current_temp": 22.538828349620463, "target_temp": 22, "humidity": 40.0}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767119362.5431306, "payload": {"is_on": true, "brightness": 80}}
+{"device_id": "term_01", "type": "THERMOSTAT", "timestamp": 1767119364.6327195, "payload": {"current_temp": 21.013718718145654, "target_temp": 22, "humidity": 40.0}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767119364.6327195, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "term_02", "type": "THERMOSTAT", "timestamp": 1767119365.314625, "payload": {"current_temp": 22.402477762320924, "target_temp": 22, "humidity": 60.2}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767119365.5175664, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "camera_02", "type": "CAMERA", "timestamp": 1767119366.4226897, "payload": {"battery_level": 100, "motion_detected": false, "last_snapshot": 1767119359.0069258}}
+{"device_id": "bulb_01", "type": "BULB", "timestamp": 1767119366.7232795, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_05", "type": "BULB", "timestamp": 1767119367.5411823, "payload": {"is_on": true, "brightness": 0}}
+{"device_id": "camera_01", "type": "CAMERA", "timestamp": 1767119367.5718992, "payload": {"battery_level": 78, "motion_detected": false, "last_snapshot": 1767119340.3008144}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767119367.8844652, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "term_03", "type": "THERMOSTAT", "timestamp": 1767119367.9773536, "payload": {"current_temp": 23.32465769386351, "target_temp": 24, "humidity": 35.2}}
+{"device_id": "bulb_02", "type": "BULB", "timestamp": 1767119369.0740986, "payload": {"is_on": true, "brightness": 80}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767119369.5147066, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767119337.7110054}}
+{"device_id": "bulb_06", "type": "BULB", "timestamp": 1767119369.6222246, "payload": {"is_on": false, "brightness": 80}}
+{"device_id": "bulb_04", "type": "BULB", "timestamp": 1767119370.3213837, "payload": {"is_on": false, "brightness": 90}}
+{"device_id": "bulb_03", "type": "BULB", "timestamp": 1767119370.5087128, "payload": {"is_on": false, "brightness": 50}}
+{"device_id": "camera_03", "type": "CAMERA", "timestamp": 1767119370.6511424, "payload": {"battery_level": 99, "motion_detected": false, "last_snapshot": 1767119337.7110054}}

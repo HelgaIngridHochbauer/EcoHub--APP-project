@@ -27,6 +27,35 @@ def file_writer_worker():
         data_queue.task_done()
 
 
+def analytic_engine(update, device):
+    """
+    The Analytics Engine: uses the update data to decide if a device method should be called.
+    """
+    device_type = update.get('type')
+    payload = update.get('payload')
+
+    # Thermostat Logic
+    if device_type == "THERMOSTAT":
+        if payload['current_temp'] > payload['target_temp']:
+            # Call your existing method!
+            device.execute_command("TRIGGER_COOLING")
+        elif payload['current_temp'] < payload['target_temp']:
+            device.execute_command("TRIGGER_HEATING")
+
+    # Camera Logic
+    if device_type == "CAMERA":
+        if payload['motion_detected']:
+            print(f"Movement detected by {device.name}!")
+            # Call your snapshot method
+            device.execute_command("TAKE_SNAPSHOT")
+
+    #Bulb Logic
+    if device_type == "BULB":
+        if random.random() < 0.05:
+            device.execute_command("TOGGLE")
+
+    # Return the potentially updated state for the log
+    return device.send_update()
 
 async def device_task(device):
     """
@@ -34,10 +63,23 @@ async def device_task(device):
     """
     device.connect()
     while True:
-        await asyncio.sleep(random.uniform(1, 5)) #sleep a few seconds
+        await asyncio.sleep(random.uniform(1, 9)) #sleep a few seconds
 
+        if device.device_type == "CAMERA":
+            # randomise motion_detected
+            if random.random() < 0.2:
+                device.detect_motion()
+            else:
+                device.motion_detected = False
+
+        if device.device_type == "THERMOSTAT":
+            #simulate the temp changing naturally
+            device.current_temp += random.uniform(-2, 2)
+
+        #analytics and storage
         update = device.send_update()
-        data_queue.put(update)
+        processed_update = analytic_engine(update, device)
+        data_queue.put(processed_update)
 
 
 async def main():
@@ -69,6 +111,3 @@ if __name__ == "__main__":
     writer_thread = threading.Thread(target=file_writer_worker, daemon=True)
     writer_thread.start()
     asyncio.run(main())
-
-    #to do: 1. Check the ascio logic, start phase 2, open main.py and start Phase 2 by setting up the Threaded Storage Worker to handle writing to history.log
-    #see device task? do we have to add something more there?
