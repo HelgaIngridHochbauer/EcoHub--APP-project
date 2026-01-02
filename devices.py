@@ -1,17 +1,20 @@
 from abc import ABC, abstractmethod
 import time
+
+from typing import Dict, Any, Optional, Union
+
 class SmartDevice(ABC):
     """
     Abstract Base Class for all IoT devices in the EcoHub system.
     """
 
-    def __init__(self, device_id, name, location):
+    def __init__(self, device_id: str, name: str, location: str)->None:
         """
         Initialize the core properties of a smart device.
 
         :param device_id: The unique ID of the device
         :param name: The name of the device used for identification
-        :param location: The room or area where the device is installed
+        :param location: The room/area where the device is installed
         """
         self.device_id = device_id
         self.name = name
@@ -19,21 +22,20 @@ class SmartDevice(ABC):
         self.device_type = "GENERIC"
         self.is_connected = False
 
-    def connect(self):
+
+    def __str__(self) -> str:
+        return f"{self.device_type}: {self.name} ({self.location})"
+
+    def __repr__(self) -> str:
+        return f"Device(id={self.device_id}, type={self.device_type})"
+
+    def connect(self)->None:
         """
         Connect the device to the EcoHub system.
         """
         self.is_connected = True
 
-    def send_update(self):
-        """
-        Creates a dictionary representing the current state of the device.
-
-        :return: A dictionary containing device_id, type, timestamp, and payload
-        """
-        pass
-
-    def disconnect(self):
+    def disconnect(self)->None:
         """
         Disconnect the device from the EcoHub system.
         :param self:
@@ -42,19 +44,31 @@ class SmartDevice(ABC):
         self.is_connected = False
 
     @abstractmethod
-    def execute_command(self, command):
+    def send_update(self) -> Dict[str, Any]:
+        """
+        Abstract method to create a dictionary representing the current state.
+        :return: A dictionary containing device state data.
+        """
         pass
+
+    @abstractmethod
+    def execute_command(self, command: str) -> None:
+        """
+        Abstract method to handle device-specific commands.
+        :param command: The string command to execute.
+        """
+        pass
+
+
 
 class SmartBulb(SmartDevice):
     """
-    The core properties of a smart bulb. Based on SmartDevice.
-
-    :param self.brightness: the brightness of the bulb, must be between 0 and 100
-    :param self.is_on: is the bulb on or off
-    :return:
-
+    The core properties of a smart bulb.
     """
-    def __init__(self, device_id, name, location, brightness):
+    def __init__(self, device_id, name, location, brightness)->None:
+        """
+        :param brightness: The brightness of the bulb
+        """
         print("SmartBulb constructor called\n")
         super().__init__(device_id,name,location)
         self._brightness = brightness
@@ -62,18 +76,23 @@ class SmartBulb(SmartDevice):
         self.is_on=False
 
     @property
-    def brightness(self):
+    def brightness(self)->int:
         """
         :return: the current brightness value
         """
         return self._brightness
 
     @brightness.setter
-    def brightness(self, value):
+    def brightness(self, value: int)->None:
         """
-        :param value: the new brightness to set
+        validation logic for brightness
+        :param value: the new brightness to set, value between 0 and 100
         :return: None
         """
+        if not isinstance(value, int):
+            print("brightness value must be an integer \n")
+            return
+
         if 0 <= value <= 100:
             self._brightness = value
         else:
@@ -85,7 +104,7 @@ class SmartBulb(SmartDevice):
                     self._brightness = 0
 
 
-    def send_update(self):
+    def send_update(self)->Dict[str, Any]:
         """ Returns the state in the format required by the log """
         return {
             'device_id': self.device_id,
@@ -98,7 +117,7 @@ class SmartBulb(SmartDevice):
         }
 
 
-    def execute_command(self, command):
+    def execute_command(self, command: str)->None:
         """ Handles bulb commands like switching on/off  """
         if command == "TOGGLE":
             self.is_on = not self.is_on
@@ -106,16 +125,15 @@ class SmartBulb(SmartDevice):
 
 class SmartThermostat(SmartDevice):
     """
-    The core properties of a smart thermostat. Based on SmartDevice.
-
-    :param current_temp: current temperature
-    :param target_temp: the target temperature must be between 15 and 30 degrees
-    :param humidity: the current humidity
-
-    :return:
+    The core properties of a smart thermostat for climate control.
 
     """
-    def __init__(self, device_id, name, location, current_temp=20.0, target_temp=22.0, humidity=40.0):
+    def __init__(self, device_id: str, name: str, location: str, current_temp:float =20.0, target_temp: float =22.0, humidity:float =40.0)->None:
+        """
+        :param current_temp: current temperature
+        :param target_temp: the target temperature must be between 15 and 30 degrees
+        :param humidity: the current humidity
+        """
         print("SmartThermostat constructor called \n")
         super().__init__(device_id,name,location)
         self.device_type = "THERMOSTAT"
@@ -124,18 +142,21 @@ class SmartThermostat(SmartDevice):
         self.humidity = humidity
 
     @property
-    def target_temp(self):
+    def target_temp(self)->float:
+        """getter for the target temperature"""
         return self._target_temp
 
     @target_temp.setter
-    def target_temp(self, value):
-        # Protecting internal state: keep house between 15 and 30 degrees
+    def target_temp(self, value)->None:
+        """Protecting internal state: keep house between 15 and 30 degrees
+        :param value: Float temperature value.
+        """
         if 15 <= value <= 30:
             self._target_temp = value
         else:
             print(f"{self.name}: Target temperature {value} is out of safe range.\n")
 
-    def send_update(self):
+    def send_update(self)->Dict[str, Any]:
         return {
             'device_id': self.device_id,
             'type': self.device_type,
@@ -148,7 +169,7 @@ class SmartThermostat(SmartDevice):
         }
 
 
-    def execute_command(self, command):
+    def execute_command(self, command:str)->None:
         """ Handles thermostat commands like cooling down/warming up  """
         if command == "TRIGGER_COOLING":
             self.current_temp -= 1.0
@@ -159,16 +180,13 @@ class SmartThermostat(SmartDevice):
 
 class SmartCamera(SmartDevice):
     """
-    The core properties of a smart thermostat. Based on SmartDevice.
-
-    :param battery_level: the level of the battery, values in [0,100]
-    :param motion_detected
-
-
-    :return:
-
+    The core properties of a smart security camera.
     """
-    def __init__(self, device_id, name, location, battery_level, motion_detected=False, last_snapshot=None):
+    def __init__(self, device_id:str, name:str, location:str, battery_level:int, motion_detected:bool=False, last_snapshot:Optional[float]=None)->None:
+        """
+        :param battery_level: the battery level
+        :param motion_detected: if the camera is motion detected
+        """
         print("SmartCamera constructor called \n")
         super().__init__(device_id,name,location)
         self.device_type = "CAMERA"
@@ -180,12 +198,13 @@ class SmartCamera(SmartDevice):
 
 
     @property
-    def battery_level(self):
+    def battery_level(self)->int:
+        """return battery precentage"""
         return self._battery_level
 
     @battery_level.setter
-    def battery_level(self, value):
-        # battery can't be >100 or <0
+    def battery_level(self, value:int)->None:
+        """battery can't be >100 or <0"""
         if 0 <= value <= 100:
             self._battery_level = value
         else:
@@ -196,7 +215,8 @@ class SmartCamera(SmartDevice):
                 if value < 0:
                     self._battery_level = 0
 
-    def send_update(self):
+    def send_update(self)->Dict[str, Any]:
+        """ returns the state in the format required by the log """
         return {
             'device_id': self.device_id,
             'type': self.device_type,
@@ -209,10 +229,11 @@ class SmartCamera(SmartDevice):
         }
 
 
-    def execute_command(self, command):
+    def execute_command(self, command:str)->None:
+        """triggers camera actions"""
         if command == "TAKE_SNAPSHOT":
             self.last_snapshot = time.time()
             print(f"Snapshot taken at {self.last_snapshot}")
 
-    def detect_motion(self):
+    def detect_motion(self)->None:
         self.motion_detected = True
