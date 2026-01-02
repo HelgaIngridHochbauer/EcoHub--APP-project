@@ -46,9 +46,9 @@ def analytic_engine(status: DeviceStatus) -> Optional[str]:
     p = status.payload
 
     if status.type == "THERMOSTAT":
-        if p.get('current_temp', 0) > p.get('target_temp', 0):
+        if p.get('current_temp', 0) > round(p.get('target_temp', 0)):
             return "TRIGGER_COOLING"
-        if p.get('current_temp', 0) < p.get('target_temp', 0):
+        if p.get('current_temp', 0) < round(p.get('target_temp', 0)):
             return "TRIGGER_HEATING"
 
     elif status.type == "CAMERA":
