@@ -3,6 +3,8 @@ import time
 
 from typing import Dict, Any, Optional, Union
 
+
+
 class SmartDevice(ABC):
     """
     Abstract Base Class for all IoT devices in the EcoHub system.
@@ -43,13 +45,22 @@ class SmartDevice(ABC):
         """
         self.is_connected = False
 
-    @abstractmethod
-    def send_update(self) -> Dict[str, Any]:
+    def send_update(self) -> dict:
         """
-        Abstract method to create a dictionary representing the current state.
-        :return: A dictionary containing device state data.
+        Creates the dictionary for the log using the __dict__ attribute.
+        We strip the leading underscores so '_target_temp' becomes 'target_temp'.
         """
-        pass
+        clean_payload = {
+            k.lstrip('_'): v for k, v in self.__dict__.items()
+            if k not in ['device_id', 'device_type', 'is_connected', 'name', 'location']
+        }
+        log_entry = {
+            'device_id': self.device_id,
+            'type': self.device_type,
+            'timestamp': time.time(),
+            'payload': clean_payload
+        }
+        return log_entry
 
     @abstractmethod
     def execute_command(self, command: str) -> None:
@@ -91,7 +102,7 @@ class SmartBulb(SmartDevice):
         """
         if not isinstance(value, int):
             print("brightness value must be an integer \n")
-            return
+            self._brightness = int(value)
 
         if 0 <= value <= 100:
             self._brightness = value
@@ -102,20 +113,6 @@ class SmartBulb(SmartDevice):
             else:
                 if value < 0:
                     self._brightness = 0
-
-
-    def send_update(self)->Dict[str, Any]:
-        """ Returns the state in the format required by the log """
-        return {
-            'device_id': self.device_id,
-            'type': self.device_type,
-            'timestamp': time.time(),
-            'payload': {
-                'is_on': self.is_on,
-                'brightness': self.brightness
-            }
-        }
-
 
     def execute_command(self, command: str)->None:
         """ Handles bulb commands like switching on/off  """
@@ -155,18 +152,6 @@ class SmartThermostat(SmartDevice):
             self._target_temp = value
         else:
             print(f"{self.name}: Target temperature {value} is out of safe range.\n")
-
-    def send_update(self)->Dict[str, Any]:
-        return {
-            'device_id': self.device_id,
-            'type': self.device_type,
-            'timestamp': time.time(),
-            'payload': {
-                'current_temp': self.current_temp,
-                'target_temp': self.target_temp,
-                'humidity': self.humidity
-            }
-        }
 
 
     def execute_command(self, command:str)->None:
@@ -215,25 +200,15 @@ class SmartCamera(SmartDevice):
                 if value < 0:
                     self._battery_level = 0
 
-    def send_update(self)->Dict[str, Any]:
-        """ returns the state in the format required by the log """
-        return {
-            'device_id': self.device_id,
-            'type': self.device_type,
-            'timestamp': time.time(),
-            'payload': {
-                'battery_level': self.battery_level,
-                'motion_detected': self.motion_detected,
-                'last_snapshot': self.last_snapshot
-            }
-        }
-
 
     def execute_command(self, command:str)->None:
         """triggers camera actions"""
         if command == "TAKE_SNAPSHOT":
             self.last_snapshot = time.time()
-            print(f"Snapshot taken at {self.last_snapshot}")
+            print(f"Snapshot taken at {self.last_snapshot} \n")
+        elif command == "LOW_BATTERY_WARNING":
+            print(f"Charging {self.name} \n")
+            self.battery_level = 100
 
     def detect_motion(self)->None:
         self.motion_detected = True
